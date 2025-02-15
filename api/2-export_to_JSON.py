@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+"""
+Export employee's TODO list to a JSON file.
+"""
+
 import json
 import requests
 import sys

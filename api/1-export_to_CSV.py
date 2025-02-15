@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+"""
+Export employee's TODO list to a CSV file.
+"""
+
 import csv
 import requests
 import sys
@@ -19,4 +24,3 @@ if __name__ == "__main__":
         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         for task in todos:
             writer.writerow([user_id, username, task.get("completed"), task.get("title")])
-
